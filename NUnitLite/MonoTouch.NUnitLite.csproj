@@ -855,6 +855,7 @@
     </Compile>
     <Compile Include="TouchRunner\NUnitOutputTextWriter.cs" />
     <Compile Include="framework\CollectionAssert.cs" />
+    <Compile Include="framework\Assert.Comparisons.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TouchRunner\" />
