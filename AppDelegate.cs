@@ -19,9 +19,9 @@
 //
 
 using System.Reflection;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
 using MonoTouch.NUnit.UI;
+using UIKit;
+using Foundation;
 
 namespace MonoTouch.NUnit {
 
@@ -43,9 +43,6 @@ namespace MonoTouch.NUnit {
 
 			// tests can be inside the main assembly
 			runner.Add (Assembly.GetExecutingAssembly ());
-			// otherwise you need to ensure that the test assemblies will 
-			// become part of the app bundle
-			runner.Add (typeof (MonoTouchFixtures.Test.Test).Assembly);
 #if false
 			// you can use the default or set your own custom writer (e.g. save to web site and tweet it ;-)
 			runner.Writer = new TcpTextWriter ("10.0.1.2", 16384);
